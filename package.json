@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "deploy": "node scripts/build.js --path=/var/www/build",
     "test": "node scripts/test.js"
   },
   "dependencies": {

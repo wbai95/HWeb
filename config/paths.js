@@ -21,7 +21,9 @@ const publicUrlOrPath = getPublicUrlOrPath(
   process.env.PUBLIC_URL
 );
 
-const buildPath = process.env.BUILD_PATH || 'build';
+const args = require('minimist')(process.argv.slice(2));
+
+const buildPath = process.env.BUILD_PATH || args['path'] || 'build';
 
 const moduleFileExtensions = [
   'web.mjs',
