@@ -15,23 +15,19 @@ import './index.css';
 // 目前这些数据先写死，等后来服务端开发后，会从服务端获得数据
 const nations = [
     {
-        nation: "中国馆",
-        flag: flag_cn
-    },
-    {
-        nation: "柬埔寨馆",
-        flag: flag_kh
-    },
-    {
-        nation: "老挝馆",
-        flag: flag_la
-    },
-    {
-        nation: "泰国馆",
+        nation: "俄罗斯",
         flag: flag_th
     },
     {
-        nation: "韩国馆",
+        nation: "美国",
+        flag: flag_kh
+    },
+    {
+        nation: "墨西哥",
+        flag: flag_la
+    },
+    {
+        nation: "加拿大",
         flag: flag_kr
     }
 ];
@@ -40,11 +36,11 @@ const regions = ['泸州展区', '西安展区', '渭南展区', '铜川展区',
 
 const partners = [
     {
-        name: "泸州老窖股份有限公司",
+        name: "北方重工",
         img: partner_luzhou
     },
     {
-        name: "四川郎酒集团有限责任公司",
+        name: "沈阳冶金机械",
         img: partner_langjiu
     }
 ];
@@ -60,11 +56,11 @@ const Exhibition = (props) => {
             <Space size="large">   </Space>
 
             <Row gutter={[16, 48]}>
-                {/* 国家展馆 */}
+                {/* 出口国家 */}
                 <Col span={24}>
                     <Row align="middle">
                         <Col span={titleSize}>
-                            国家展馆
+                            出口国家
                         </Col>
                         <Col span={12}>
                             <Row>
@@ -90,7 +86,7 @@ const Exhibition = (props) => {
                 </Col>
 
                 {/*地方展区*/}
-                <Col span={24}>
+                {/* <Col span={24}>
                     <Row>
                         <Col span={titleSize}>
                             地方展区
@@ -107,13 +103,13 @@ const Exhibition = (props) => {
                             </Row>
                         </Col>
                     </Row>
-                </Col>
+                </Col> */}
 
                 {/*热门展台*/}
                 <Col span={24}>
                     <Row align="middle" >
                         <Col span={titleSize}>
-                            热门展台
+                            合作公司
                         </Col>
                         <Col span={12}>
                             <Row>

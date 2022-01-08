@@ -7,53 +7,37 @@ const ProductCatalog = (props) => {
 
     const [categioryList, setCategioryList] = useState([
         {
-            title: "电器及家具",
+            title: "齿轮箱",
             url: 'url',
         },
         {
-            title: "照明",
+            title: "矿山配件",
             url: 'url',
         },
         {
-            title: "汽车及配件",
+            title: "齿轮",
             url: 'url',
         },
         {
-            title: "机械",
+            title: "齿圈",
             url: 'url',
         },
         {
-            title: "五金工具",
+            title: "铸件",
             url: 'url',
         },
         {
-            title: "建材",
+            title: "锻件",
             url: 'url',
         },
         {
-            title: "化工产品",
+            title: "齿轮轴",
             url: 'url',
         },
         {
-            title: "能源",
+            title: '激振器',
             url: 'url',
-        },
-        {
-            title: "日用消费品",
-            url: 'url',
-        },
-        {
-            title: "礼品",
-            url: 'url',
-        },
-        {
-            title: "装饰品",
-            url: 'url',
-        },
-        {
-            title: "纺织品",
-            url: 'url',
-        },
+        }
     ])
 
     const categioryCards = useMemo(() => {

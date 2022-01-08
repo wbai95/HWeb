@@ -7,7 +7,7 @@ const { Text } = Typography;
 
 const SearchBar = () => {
     const options = useRef([]);
-    const popularRegionsStr = useRef(["泸州", "西安", "铜川"]);
+    const popularRegionsStr = useRef(["减速机", "齿轮", "齿圈"]);
 
     const popularRegions = useMemo(() => {
         const regions = popularRegionsStr.current.map((item, index) => {

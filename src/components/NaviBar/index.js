@@ -33,7 +33,7 @@ const data = {
         },
         {
             key: 'Merchants',
-            title: '参展商家',
+            title: '产品',
             items: [
                 {
                     key: 'Merchants_id_1',
@@ -71,13 +71,17 @@ const data = {
             title: '关于世博',
         },
         */
+        // {
+        //     key: 'Login',
+        //     title: '登录',
+        // },
+        // {
+        //     key: 'Register',
+        //     title: '注册',
+        // },
         {
-            key: 'Login',
-            title: '登录',
-        },
-        {
-            key: 'Register',
-            title: '注册',
+            key: 'Connect_us',
+            title: '联系我们',
         },
         {
             key: 'Language',
@@ -86,13 +90,13 @@ const data = {
     ],
 };
 
-const NaviBar = () => {
+const NaviBar = ({ background='' }) => {
 
     const rightStyle = { position: 'absolute', top: 0, right: 0 };
 
     return (
         <div>
-            <Menu mode="horizontal" theme="light">
+            <Menu mode="horizontal" theme="dark" style={{ background }}>
                 {data.items.map(item => (
                     item.items && item.items.length > 0 ? (
                         <SubMenu key={item.key} title={item.title}>

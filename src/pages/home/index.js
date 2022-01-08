@@ -9,7 +9,7 @@ import Partner from '../../components/Partner';
 import ProductCatalog from "../../components/ProductCatalog";
 import SearchBar from '../../components/SearchBar';
 import { DEFAULT_STYLE } from './Const';
-import { WorldMap } from './Map/';
+import { TopCarousel } from './Carousel'
 
 
 // 目前这些数据先写死，等后来服务端开发后，会从服务端获得数据
@@ -35,7 +35,7 @@ const HomePage = () => {
 
             <div>
                 {/* 需要将图片宽度与窗口宽度保持一致 */}
-                <WorldMap />
+                <TopCarousel />
 
                 {/* 搜索栏 */}
                 <SearchBar />

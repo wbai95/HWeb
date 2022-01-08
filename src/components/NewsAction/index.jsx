@@ -14,11 +14,11 @@ const NewsAction = (props) => {
 
     const newsList = useRef([
         {
-            title: '大会活动',
+            title: '公司活动',
             img: activitiesImg
         },
         {
-            title: '展会动态',
+            title: '公司动态',
             img: exhibitionNewsImg
         },
         {

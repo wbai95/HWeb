@@ -26,67 +26,32 @@ const ExhibitOverview = (props) => {
 
     const [categioryList, setCategioryList] = useState([
         {
-            title: "照明",
+            title: "齿轮箱",
             img: illumination,
             exhibitsCount: 0,
             exhibitorsCount: 0,
-            subCategiories: ['家用灯具', '工业照明'],
+            subCategiories: ['减速机', '增塑机'],
         },
         {
-            title: "纺织服装",
+            title: "齿轮",
             img: clothes,
             exhibitsCount: 0,
             exhibitorsCount: 0,
-            subCategiories: ['男士', '女士', '儿童'],
+            subCategiories: ['风能齿轮', '重型齿轮'],
         },
         {
-            title: "机械",
+            title: "齿圈",
             img: machine,
             exhibitsCount: 0,
             exhibitorsCount: 0,
-            subCategiories: ['矿山设备', '水泥设备', '配件'],
+            subCategiories: ['电铲大齿圈', '风能内环齿圈', '定制直齿环齿圈'],
         },
         {
-            title: "能源",
-            img: energy,
+            title: "齿轮轴",
+            img: machine,
             exhibitsCount: 0,
             exhibitorsCount: 0,
-            subCategiories: ['风电', '火电', '太阳能'],
-        },
-        {
-            title: "医药及医药保健",
-            img: medicalTreatment,
-            exhibitsCount: 0,
-            exhibitorsCount: 0,
-            subCategiories: ['外科', '防护', '儿童'],
-        },
-        {
-            title: "家电",
-            img: homeAppliances,
-            exhibitsCount: 0,
-            exhibitorsCount: 0,
-            subCategiories: ['家用电器', '数码', '电脑'],
-        },
-        {
-            title: "化工产品",
-            img: chemicalProducts,
-            exhibitsCount: 0,
-            exhibitorsCount: 0,
-            subCategiories: ['有机原料', '生物化工'],
-        },
-        {
-            title: "五金工具",
-            img: hardwareTools,
-            exhibitsCount: 0,
-            exhibitorsCount: 0,
-            subCategiories: ['建筑五金', '日用五金', '家居五金'],
-        },
-        {
-            title: "食品",
-            img: food,
-            exhibitsCount: 0,
-            exhibitorsCount: 0,
-            subCategiories: ['粮食和粮食制品', '肉和肉制品', '饮品'],
+            subCategiories: ['大型齿轮轴'],
         },
     ]);
 
@@ -114,10 +79,6 @@ const ExhibitOverview = (props) => {
                                         {/* 正面内容 */}
                                         <Title level={5}>{item.title}</Title>
                                         <img src={item.img} alt={item.title} style={{ width: 150, height: 150 }} />
-                                        <Space>
-                                            <div>{item.exhibitsCount}个展区</div>
-                                            <div>{item.exhibitsCount}个展商</div>
-                                        </Space>
                                     </div>
                                     <div class="back">
                                         {/* 背面内容 */}
@@ -140,17 +101,17 @@ const ExhibitOverview = (props) => {
         <div className="exhibit-bar" style={defatulStyle}>
             <div className="exhibit-bar-title">
                 <Space align="center">
-                    <div style={{ color: "rgba(0, 0, 0, 0.85)", fontWeight: 600, fontSize: 24 }}>商店+商品</div>
-                    <Text>{exhibitInfo.categoryCount}个大类</Text>
-                    <Text>{exhibitInfo.exhibitionAreaCount}个展区</Text>
+                    <div style={{ color: "rgba(0, 0, 0, 0.85)", fontWeight: 600, fontSize: 24 }}>产品</div>
+                    {/* <Text>{exhibitInfo.categoryCount}个大类</Text>
+                    <Text>{exhibitInfo.exhibitionAreaCount}个展区</Text> */}
                 </Space>
 
                 <div style={{ minWidth: 400 }}>
                     <Input.Group compact>
-                        <Select defaultValue="exhibit" style={{ width: '20%' }}>
+                        {/* <Select defaultValue="exhibit" style={{ width: '20%' }}>
                             <Option value="exhibit">展品</Option>
                             <Option value="exhibitor">展商</Option>
-                        </Select>
+                        </Select> */}
                         <Input.Search
                             style={{ width: '80%' }}
                             placeholder="请输入关键字"
