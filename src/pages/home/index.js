@@ -8,8 +8,8 @@ import NewsAction from '../../components/NewsAction';
 import Partner from '../../components/Partner';
 import ProductCatalog from "../../components/ProductCatalog";
 import SearchBar from '../../components/SearchBar';
+import { TopCarousel } from './Carousel';
 import { DEFAULT_STYLE } from './Const';
-import { TopCarousel } from './Carousel'
 
 
 // 目前这些数据先写死，等后来服务端开发后，会从服务端获得数据

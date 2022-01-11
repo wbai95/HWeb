@@ -1,12 +1,6 @@
-import chemicalProducts from '@/statics/img/chemical_products.jpg';
 import clothes from '@/statics/img/clothes.jpg';
-import energy from '@/statics/img/energy.jpg';
-import food from '@/statics/img/food.jpg';
-import hardwareTools from '@/statics/img/hardware_tools.jpg';
-import homeAppliances from '@/statics/img/home_appliances.jpg';
 import illumination from '@/statics/img/illumination.jpg';
 import machine from '@/statics/img/machine.jpg';
-import medicalTreatment from '@/statics/img/medicalTreatment.jpg';
 import { LeftOutlined, RightOutlined } from "@ant-design/icons";
 // import { LeftCircleTwoTone, RightCircleTwoTone } from "@ant-design/icons";
 import { Carousel, Input, Select, Space, Typography } from 'antd';

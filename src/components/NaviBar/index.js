@@ -1,5 +1,5 @@
-import { Button, Menu } from 'antd';
-import React from "react";
+import { Menu } from 'antd';
+import React, { useRef } from "react";
 import '../../statics/css/naviBar.css';
 import './index.css';
 
@@ -14,90 +14,62 @@ const data = {
             title: '首页',
         },
         {
-            key: 'News',
-            title: '新闻中心',
-            items: [
-                {
-                    key: 'News_overview',
-                    title: '博览会概况',
-                },
-                {
-                    key: 'News_update',
-                    title: '展会动态',
-                },
-                {
-                    key: 'News_announcement',
-                    title: '公告',
-                },
-            ],
-        },
-        {
-            key: 'Merchants',
-            title: '产品',
-            items: [
-                {
-                    key: 'Merchants_id_1',
-                    title: '车辆及配件',
-                },
-                {
-                    key: 'Merchants_id_2',
-                    title: '电子及家电',
-                },
-                {
-                    key: 'Merchants_id_3',
-                    title: '纺织服装',
-                },
-                {
-                    key: 'Merchants_id_4',
-                    title: '建材',
-                },
-                {
-                    key: 'Merchants_id_5',
-                    title: '日用品消费',
-                },
-                {
-                    key: 'Merchants_id_6',
-                    title: '食品',
-                },
-            ],
-        },
-        {
-            key: 'About_us',
+            key: 'about',
             title: '关于我们',
         },
-        /*
         {
-            key: 'About_expo',
-            title: '关于世博',
+            key: 'production',
+            title: '产品中心',
         },
-        */
-        // {
-        //     key: 'Login',
-        //     title: '登录',
-        // },
-        // {
-        //     key: 'Register',
-        //     title: '注册',
-        // },
+        {
+            key: 'message',
+            title: '在线留言',
+        },
         {
             key: 'Connect_us',
             title: '联系我们',
-        },
-        {
-            key: 'Language',
-            title: 'ENGLISH',
         },
     ],
 };
 
 const NaviBar = ({ background='' }) => {
 
+    const barsList = useRef([
+        {
+            key: 'Home',
+            title: '首页',
+        },
+        {
+            key: 'about',
+            title: '关于我们',
+        },
+        {
+            key: 'production',
+            title: '产品中心',
+        },
+        {
+            key: 'message',
+            title: '在线留言',
+        },
+        {
+            key: 'Connect_us',
+            title: '联系我们',
+        },
+    ]);
+
+    // #ffffff
     const rightStyle = { position: 'absolute', top: 0, right: 0 };
 
     return (
         <div>
             <Menu mode="horizontal" theme="dark" style={{ background }}>
-                {data.items.map(item => (
+                {barsList.current.map(item => (
+                    <Menu.Item key={item.key}>
+                        {item.title}
+                    </Menu.Item>
+                ))}
+
+                {/* {data.items.map(item => (
                     item.items && item.items.length > 0 ? (
                         <SubMenu key={item.key} title={item.title}>
                             <Menu.ItemGroup>
@@ -119,7 +91,7 @@ const NaviBar = ({ background='' }) => {
                                 </div>}
                         </Menu.Item>
                     )
-                ))}
+                ))} */}
             </Menu>
             
             {/*

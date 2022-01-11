@@ -1,0 +1,25 @@
+
+/* .header {
+    height: 100px;
+}; */
+
+.navi-bar {
+    background-color: rgb(47, 53, 59);
+    display: flex;
+    // justify-content: space-around;
+    
+    .navi-item {
+        background: transparent;
+        color: rgb(255, 255, 255);
+        flex: 1 1 33.33%;
+        height: 56px;
+        // width: 171px;
+        
+
+        &:hover {
+            background-color: #ee4547;
+        }
+    }
+
+  
+};

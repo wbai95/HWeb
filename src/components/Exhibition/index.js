@@ -1,5 +1,4 @@
 // 国旗
-import flag_cn from '@/statics/img/cn.png';
 import flag_kh from '@/statics/img/kh.png';
 import flag_kr from '@/statics/img/kr.png';
 import flag_la from '@/statics/img/la.png';
