@@ -61,8 +61,8 @@ const ExhibitOverview = (props) => {
                     categioryList.map(item =>
                         <div className="exhibit-item-wrap">
                             <div className="flip-container" >
-                                <div class="flipper">
-                                    <div class="front"
+                                <div className="flipper">
+                                    <div className="front"
                                         style={{
                                             display: 'flex',
                                             flexDirection: 'column',
@@ -74,10 +74,13 @@ const ExhibitOverview = (props) => {
                                         <Title level={5}>{item.title}</Title>
                                         <img src={item.img} alt={item.title} style={{ width: 150, height: 150 }} />
                                     </div>
-                                    <div class="back">
+                                    <div className="back">
                                         {/* 背面内容 */}
                                         <Title level={5}>{item.title}</Title>
-                                        {item.subCategiories.map(subCategiory => <div>{subCategiory}</div>)}
+                                        {item.subCategiories.map(
+                                            subCategiory =>
+                                                <div key={subCategiory}>{subCategiory}</div>
+                                        )}
                                     </div>
                                 </div>
                             </div>

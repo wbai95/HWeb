@@ -7,7 +7,6 @@ import CustomeHeader from '../../components/Header';
 import NewsAction from '../../components/NewsAction';
 import Partner from '../../components/Partner';
 import ProductCatalog from "../../components/ProductCatalog";
-import SearchBar from '../../components/SearchBar';
 import { TopCarousel } from './Carousel';
 import { DEFAULT_STYLE } from './Const';
 
@@ -38,7 +37,7 @@ const HomePage = () => {
                 <TopCarousel />
 
                 {/* 搜索栏 */}
-                <SearchBar />
+                {/* <SearchBar /> */}
 
                 {/* 国家展区以及地区展区部分 */}
                 <Exhibition defatulStyle={DEFAULT_STYLE} />
