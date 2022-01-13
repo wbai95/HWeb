@@ -1,53 +1,22 @@
-// import expo_logo from '@/statics/img/expo_logo.png';
 import hw_logo from '@/statics/img/hw_logo.png';
 import { Affix } from 'antd';
 import React, { useMemo, useRef } from "react";
-import {
-    useLocation, useNavigate
-} from 'react-router-dom';
-// import NaviBar from "../NaviBar";
+import { useLocation, useNavigate } from 'react-router-dom';
+import { naviItems } from '../../constants/index';
 import './index.scss';
 
 
 const CustomeHeader = () => {
     // const background = 'rgb(0, 0, 255)'; // 统一的背景
-    const background = 'rgb(47, 53, 59)';
-    const topHeight = 100;
     const navigate = useNavigate();
 
     const location = useLocation();
     const currentPath = location.pathname;
     
 
-    const naviItemsList = useRef([
-        {
-            key: 'Home',
-            title: '首页',
-            path: '/',
-        },
-        {
-            key: 'about',
-            title: '关于我们',
-            path: '/about',
-        },
-        {
-            key: 'production',
-            title: '产品中心',
-            path: '/production',
-        },
-        {
-            key: 'message',
-            title: '在线留言',
-            path: '/message',
-        },
-        {
-            key: 'Connect_us',
-            title: '联系我们',
-            path: '/connect',
-        },
-    ]);
+    const naviItemsList = useRef(naviItems);
 
-    const naviItems = useMemo(() => {
+    const navibarItems = useMemo(() => {
         const content = naviItemsList.current.map(item => {
             const { path: itemPath, title, key } = item;
             const backgroundColor = currentPath === itemPath ? '#ee4547' : 'transparent';
@@ -68,13 +37,12 @@ const CustomeHeader = () => {
 
     return (
         <div>
-            <div style={{ background, height: topHeight }}>
-                <img src={hw_logo} style={{ width: 330, height: topHeight,  }} />
+            <div className='top-header'>
+                <img src={hw_logo} style={{ width: 320, height: 100,  }} />
             </div>
-            
             <Affix offsetTop={0}>
                 <div className='navi-bar'>
-                    {naviItems}
+                    {navibarItems}
                 </div>
             </Affix>
             <div 
