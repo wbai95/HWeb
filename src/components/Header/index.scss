@@ -3,12 +3,23 @@
     height: 100px;
 }; */
 
+.top-header {
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(47, 53, 59);
+}
+
 .navi-bar {
     background-color: rgb(47, 53, 59);
     display: flex;
-    // justify-content: space-around;
+    justify-content: center;
 
     .navi-item {
+        max-width: 250px;
         background: transparent;
         color: rgb(255, 255, 255);
         flex: 1 1 33.33%;
@@ -21,6 +32,5 @@
             background-color: #ee4547;
         }
     }
-
   
 };
