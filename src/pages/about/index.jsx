@@ -1,22 +1,15 @@
 import CustomeHeader from '@/components/Header';
-import { naviItems } from '@/constants/index';
+import PageHeader from '@/components/PageHeader';
 import { introduction } from '@/constants/introduction';
-import { array2clusterFlat } from '@/utils/index';
 import { MailOutlined, MobileOutlined, PhoneOutlined, SendOutlined, UserOutlined } from '@ant-design/icons';
-import { PageHeader, Space, Tabs, Typography } from 'antd';
+import { Space, Tabs, Typography } from 'antd';
 import React, { useMemo } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+
 
 const { Paragraph } = Typography;
 const { TabPane } = Tabs;
 
 export default () => {
-    const location = useLocation();
-    const currentPath = location.pathname;
-    const routerPathMap = array2clusterFlat(naviItems, ['path']);
-    const currentSubTitle = routerPathMap[currentPath].title;
-    const navigate = useNavigate();
-
     const paragraphStyle = {
         fontSize: 18, textIndent: '2em'
     };
@@ -78,12 +71,7 @@ export default () => {
     return (
         <>
             <CustomeHeader />
-            <PageHeader
-                onBack={() => null}
-                title="首页"
-                subTitle={currentSubTitle}
-                onBack={() => navigate('/')}
-            />
+            <PageHeader />
 
             <div style={{ padding: '0 30px 0 30px' }}>
                 <div style={{ display: 'flex' }}>
