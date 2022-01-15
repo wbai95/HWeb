@@ -11,9 +11,9 @@ export const naviItems = [
         path: '/about',
     },
     {
-        key: 'production',
+        key: 'product',
         title: '产品中心',
-        path: '/production',
+        path: '/product',
     },
     {
         key: 'message',

@@ -8,7 +8,7 @@ import mailApi from '../../api/mail';
 
 const { Option } = Select;
 
-export default () => {
+const ConnectUsPage = () => {
     const [form] = Form.useForm();
 
     const onFinish = async (values) => {
@@ -115,4 +115,7 @@ export default () => {
             </div>
         </>
     );
-}
+};
+
+
+export default ConnectUsPage;

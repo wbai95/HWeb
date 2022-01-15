@@ -4,7 +4,7 @@ import { PageHeader } from 'antd';
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-export default () => {
+const CustomPageHeader = () => {
     const location = useLocation();
     const currentPath = location.pathname;
     const routerPathMap = array2clusterFlat(naviItems, ['path']);
@@ -20,3 +20,5 @@ export default () => {
         />
     );
 }
+
+export default CustomPageHeader;

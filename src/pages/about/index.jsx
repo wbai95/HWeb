@@ -9,7 +9,7 @@ import React, { useMemo } from 'react';
 const { Paragraph } = Typography;
 const { TabPane } = Tabs;
 
-export default () => {
+const AboutPage = () => {
     const paragraphStyle = {
         fontSize: 18, textIndent: '2em'
     };
@@ -106,4 +106,6 @@ export default () => {
             </div>
         </>
     )
-}
+};
+
+export default AboutPage;

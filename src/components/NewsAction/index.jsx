@@ -2,7 +2,7 @@ import activitiesImg from '@/statics/img/activities.png';
 import exhibitionNewsImg from '@/statics/img/exhibition_news.png';
 import backgroundImg from '@/statics/img/new_action_background.png';
 import notificationImg from '@/statics/img/notification.png';
-import { Card, Space, Typography, Row, Col } from 'antd';
+import { Card, Space, Typography } from 'antd';
 import React, { useMemo, useRef } from 'react';
 import './index.scss';
 
@@ -29,7 +29,7 @@ const NewsAction = (props) => {
 
     const newCards = useMemo(() => {
         const content =
-            <Space size={ 200 } style={{ width: '100%', justifyContent: 'center' }}>
+            <Space size={200} style={{ width: '100%', justifyContent: 'center' }}>
                 {newsList.current.map(item =>
                     <Card
                         hoverable

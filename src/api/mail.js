@@ -1,7 +1,9 @@
 import { http } from "./index";
 
-export default {
+const mailApi = {
     postQuerierInfo(data) {
         return http.post('/v1/mail/sendQuerier', data);
     }
 }
+
+export default mailApi;

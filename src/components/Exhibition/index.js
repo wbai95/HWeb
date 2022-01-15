@@ -31,7 +31,7 @@ const nations = [
     }
 ];
 
-const regions = ['泸州展区', '西安展区', '渭南展区', '铜川展区', '咸阳展区', '延安展区', '更多+'];
+// const regions = ['泸州展区', '西安展区', '渭南展区', '铜川展区', '咸阳展区', '延安展区', '更多+'];
 
 const partners = [
     {
@@ -68,7 +68,7 @@ const Exhibition = (props) => {
                                         <Col flex={1}>
                                             <Row>
                                                 <Col span={24} align="center">
-                                                    <img src={nation.flag} style={{ width: 80, height: 50 }} />
+                                                    <img src={nation.flag} alt="flag" style={{ width: 80, height: 50 }} />
                                                 </Col>
                                             </Row>
                                             <Row>
@@ -117,7 +117,7 @@ const Exhibition = (props) => {
                                         <Col flex={1}>
                                             <Row>
                                                 <Col span={24} align="center">
-                                                    <img src={partner.img} style={{ width: 200, height: 100 }} />
+                                                    <img src={partner.img} alt="partner" style={{ width: 200, height: 100 }} />
                                                 </Col>
                                             </Row>
                                             <Row>

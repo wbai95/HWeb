@@ -38,7 +38,7 @@ const CustomeHeader = () => {
     return (
         <div>
             <div className='top-header'>
-                <img src={hw_logo} style={{ width: 320, height: 100,  }} />
+                <img src={hw_logo} alt='logo' style={{ width: 320, height: 100,  }} />
             </div>
             <Affix offsetTop={0}>
                 <div className='navi-bar'>

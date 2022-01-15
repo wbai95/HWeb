@@ -1,7 +1,9 @@
 import { Spin } from 'antd';
 
-export default () => (
+const PageLoading = () => (
     <div>
         <Spin />
     </div>
 );
+
+export default PageLoading;

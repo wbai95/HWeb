@@ -13,6 +13,9 @@ const AboutPage = lazyLoad(
 const ConnectUsPage = lazyLoad(
     () => import(/* webpackChunkName: "Home" */ '../pages/connect')
 )
+const ProductPage = lazyLoad(
+    () => import('../pages/product')
+);
 
 const AppRouter = () => (
     <Router>
@@ -20,6 +23,7 @@ const AppRouter = () => (
             <Route exact path="/" element={<HomePage />} />
             <Route exact path="/about" element={<AboutPage />} />
             <Route exact path="/connect" element={<ConnectUsPage />} />
+            <Route exact path="/product" element={<ProductPage />} />
             <Route path="*" element={<Navigate to="/" />} />
         </Routes>
     </Router>
