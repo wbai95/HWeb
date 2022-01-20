@@ -13,10 +13,11 @@ const CustomPageHeader = () => {
 
     return (
         <PageHeader
-            onBack={() => null}
             title="首页"
             subTitle={currentSubTitle}
-            onBack={() => navigate('/')}
+            onBack={
+                () => navigate('/')
+            }
         />
     );
 }

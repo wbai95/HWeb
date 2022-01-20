@@ -1,10 +1,10 @@
 import CustomeHeader from '@/components/Header';
+import MapContainer from '@/components/MapContainer';
 import PageHeader from '@/components/PageHeader';
 import countriesPhoneNum from '@/constants/countriesPhoneNum';
 import { Button, Form, Input, message, Select } from 'antd';
 import React from 'react';
 import mailApi from '../../api/mail';
-
 
 const { Option } = Select;
 
@@ -52,7 +52,8 @@ const ConnectUsPage = () => {
         <>
             <CustomeHeader />
             <PageHeader />
-            <div style={{ padding: '0 30px 0 30px' }}>
+
+            <div style={{ padding: '10px 30px 50px 30px', display: 'flex', justifyContent: 'space-around' }}>
                 <Form
                     form={form}
                     name="connectus"
@@ -112,6 +113,8 @@ const ConnectUsPage = () => {
                         </Button>
                     </Form.Item>
                 </Form>
+
+                <MapContainer height='500px' width='600px' />
             </div>
         </>
     );

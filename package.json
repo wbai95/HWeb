@@ -9,6 +9,7 @@
     "test": "node scripts/test.js"
   },
   "dependencies": {
+    "@amap/amap-jsapi-loader": "^1.0.1",
     "@babel/core": "7.12.3",
     "@pmmmwh/react-refresh-webpack-plugin": "0.4.3",
     "@svgr/webpack": "5.5.0",
@@ -17,6 +18,7 @@
     "@testing-library/user-event": "^12.8.3",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
+    "@umijs/hooks": "^1.9.3",
     "antd": "^4.16.13",
     "axios": "^0.24.0",
     "babel-eslint": "^10.1.0",
